@@ -11,11 +11,11 @@ class ErrorHandling {
         throw new IllegalArgumentException(message);
     }
 
-    void handleErrorByThrowingAnyCheckedException() {
+    void handleErrorByThrowingAnyCheckedException() throws Exception {
         throw new Exception();
     }
 
-    void handleErrorByThrowingAnyCheckedExceptionWithDetailMessage(String message) {
+    void handleErrorByThrowingAnyCheckedExceptionWithDetailMessage(String message) throws Exception {
         throw new Exception(message);
     }
 
@@ -27,11 +27,11 @@ class ErrorHandling {
         throw new RuntimeException(message);
     }
 
-    void handleErrorByThrowingCustomCheckedException() {
+    void handleErrorByThrowingCustomCheckedException() throws CustomCheckedException {
         throw new CustomCheckedException();
     }
 
-    void handleErrorByThrowingCustomCheckedExceptionWithDetailMessage(String message) {
+    void handleErrorByThrowingCustomCheckedExceptionWithDetailMessage(String message) throws CustomCheckedException {
         throw new CustomCheckedException(message);
     }
 
